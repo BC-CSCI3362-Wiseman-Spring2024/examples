@@ -7,6 +7,8 @@ int global_var;
 
 int main(int argc, char **argv)
 {
+    // note, ASLR is a thing, so run this like:
+    // setarch x86_64 -R ./memory_addresses
     if (argc != 3)
     {
         printf("usage: %s value sleep_time\n", basename(argv[0]));
