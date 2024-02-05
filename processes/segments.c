@@ -23,8 +23,8 @@ int main(int argc, char **argv)
     printf("init_sbrk  = %p\n", init_sbrk);
     printf("dynvar     = %p\n", dynvar);
     printf("next_sbrk  = %p\n", next_sbrk);
-    printf("&argc      = %p\n", &argc);
     printf("&argv      = %p\n", &argv);
+    printf("&argc      = %p\n", &argc);
     printf("&localvar  = %p\n", &localvar);
     printf("&dynvar    = %p\n", &dynvar);
     printf("&argv[0]   = %p\n", &argv[0]);
