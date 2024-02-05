@@ -14,6 +14,7 @@ int main(int argc, char **argv)
     void *init_sbrk = sbrk(0);
     int localvar=0;
     int *dynvar = (int *)malloc(sizeof(int));
+    void *next_sbrk = sbrk(0);
 
     printf("&main      = %p\n", &main);
     printf("&etext     = %p\n", &etext);
@@ -21,8 +22,12 @@ int main(int argc, char **argv)
     printf("&end       = %p\n", &end);
     printf("init_sbrk  = %p\n", init_sbrk);
     printf("dynvar     = %p\n", dynvar);
+    printf("next_sbrk  = %p\n", next_sbrk);
     printf("&argc      = %p\n", &argc);
+    printf("&argv      = %p\n", &argv);
     printf("&localvar  = %p\n", &localvar);
     printf("&dynvar    = %p\n", &dynvar);
+    printf("&argv[0]   = %p\n", &argv[0]);
+    printf("&argv[0][0]= %p\n", &argv[0][0]);
     return 0;
 }
