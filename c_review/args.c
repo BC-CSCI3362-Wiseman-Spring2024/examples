@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 {
     if (argc != 2)
     {
-        printf("usage: %s string\n", basename(argv[0]));
+        printf("usage: %s string\n", argv[0]);
         exit(1);
     }
     int *counts = count_letters(argv[1]);

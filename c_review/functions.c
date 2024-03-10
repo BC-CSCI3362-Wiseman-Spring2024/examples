@@ -49,7 +49,7 @@ void print_counts(int *counts)
 
 int main()
 {
-    char s[] = "This is the way.";
+    char *s = "This is the way.";
 
     int *counts = count_letters(s);
     print_counts(counts);

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void func(int a[])
+void func(int *a)
 {
     printf("func: sizeof(a)=%lu\n", sizeof(a));
     printf("func: Length of a=%lu\n", sizeof(a)/sizeof(a[0]));

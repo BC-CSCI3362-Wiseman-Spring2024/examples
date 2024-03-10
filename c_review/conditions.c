@@ -5,6 +5,7 @@ int main()
 {
     int count = 10;
 
+    // count = count - 1;
     while(--count)
     {
         printf("while loop %d", count);

@@ -2,7 +2,8 @@
 
 int main()
 {
-    int x = 42;
+    int x;
+    x = 42;
     double a = -1.518;
     char c = 'A';
     char *s = "Hello there";

@@ -15,13 +15,15 @@ int main()
         exit(1);
     }
 
-    int fd = open("stuff.txt", O_WRONLY|O_CREAT|O_TRUNC, 0600);
+    //int fd = open("stuff.txt", O_WRONLY|O_CREAT|O_TRUNC, 0600);
+    int fd = open("stuff.txt", O_RDONLY);
     if (fd < 0)
     {
         perror("open");
         exit(1);
     }
 
+    fprintf(stdout, "stuff\n");
     printf("got fd=%d!?\n", fd);
     printf("BOOP\n");
 
